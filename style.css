@@ -1,0 +1,1343 @@
+body{
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+width:100%;
+height: 50px;
+background-color: white;
+display: flex;
+justify-content: space-around;
+}
+
+header a{
+ color: black;   
+text-decoration: none;
+margin-top: 10px;
+}
+
+header img  {
+    margin-left: -120px;
+    margin-top: 1px;
+    height: 40px;
+}
+
+
+
+header p  {
+    margin-left: -290px;
+    margin-top: 10px;
+}
+
+main video{
+    height: 600px;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+ #fitness2{
+    width: 450px;
+    
+    border-radius: 10px;
+    position:absolute;
+    top: -9%;
+    left:20;
+}
+
+#fitness3{
+    width: 450px;
+    
+    border-radius: 10px;
+    position:absolute;
+    top: 210;
+    left:20;
+}
+
+#fitness4{
+    width: 450px;
+    
+    border-radius: 10px;
+    position:absolute;
+    top: -9%;
+    right:20;
+}
+
+#fitness5{
+    width: 450px;
+    border-radius: 10px;
+    position:absolute;
+    top: 210;
+    right:20;
+}
+
+.container{
+  
+    width: 1500px;
+    height: 250px;
+    position: absolute;
+    left: 450;
+    top: 720;
+    display: flex;
+   
+}
+
+ .one{
+    width: 300px;
+    background-color:rgb(224, 253, 35);
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 20;
+}
+
+ .two{
+    width: 300px;
+    background-color: black;
+     padding-top: 10px;
+    padding-left: 10px;
+    color: rgb(212, 237, 49);
+    font-size: 20;
+}
+
+ .three{
+    width: 300px;
+    background-color:rgb(224, 253, 35);
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 20;
+}
+
+.aboutus .onex {
+    position: absolute;
+    margin-top: 350px;
+height: 350;
+left: 10;
+width: 300;
+
+}
+
+.aboutus .twox {
+    position: absolute;
+    margin-top: 390px;
+    height: 350;
+    width: 500;
+    left: 320;
+    
+    }
+
+    .aboutus .threex {
+        position: absolute;
+        margin-top: 350px;
+        height: 350;
+        width: 300;
+        left: 830;
+        
+        }
+
+        .aboutus h2{
+            color: white;
+            position: absolute;
+            margin-top: 370px;
+            right: 570;
+            font-size: 30;
+        }
+
+        .aboutus p{
+            color: white;
+            position: absolute;
+            margin-top: 420px;
+            right: 160;
+            font-size: 25;
+        }
+
+
+        
+    
+
+        .videoss h2{
+            /* background-color:white; */
+            position: absolute;
+            top: 1410;
+            width: 99%;
+            left: 10;
+            font-size: 40;
+            color: white;
+            
+        }
+
+        .video1{
+            width: 400px;
+            position: absolute;
+            top: 1500;
+            left:260;
+            cursor: pointer;
+        }
+
+        .video2{
+            width: 400px;
+            position: absolute;
+            top: 1500;
+            left:680;
+            cursor: pointer;
+        }
+
+        .video3{
+            width: 400px;
+            position: absolute;
+            top: 1500;
+            left:1100;
+            cursor: pointer;
+        }
+
+
+        .video4{
+            width: 400px;
+            position: absolute;
+            top: 1750;
+            left:260;
+            cursor: pointer;
+        }
+
+        .video5{
+            width: 400px;
+            position: absolute;
+            top: 1750;
+            left:680;
+            cursor: pointer;
+        }
+
+        .video6{
+            width: 400px;
+            position: absolute;
+            top: 1750;
+            left:1100;
+            cursor: pointer;
+        }
+
+
+        #calendar{
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* background-color: blueviolet; */
+            width: 99%;
+            top: 2050;
+            height: 700;
+            /* left: 50; */
+        }
+
+        /* .onix{
+            width: 200;
+            background-color: lightpink;
+            margin: 5px;
+            height: 200px;
+        } */
+
+
+        /* .calendar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+        } */
+        .month {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 240px; /* Fixed width */
+            height: 235px; /* Fixed height */
+        }
+        .month h3 {
+            text-align: center;
+            margin: 0;
+        }
+        .days {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: calc(100% - 40px); /* Adjust height for days */
+        }
+        .day {
+            flex: 1 0 14.28%; /* 7 days in a week */
+            padding: 3px; /* Reduced padding */
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+            margin: 1px;
+            height: 15px;
+            cursor: pointer;
+        }
+        .day:hover {
+            background-color: #f0f8ff;
+        }
+
+        #cal{
+            /* background-color: white; */
+            width: 100%;
+            position: absolute;
+            top: 1960;
+            color: white;
+            font-size: 40;
+            left: 10;
+        }
+
+.hide{
+    display: none;
+}
+        #menx{
+            width: 350px;
+            height: 50px;
+            background-color: white;
+            /* margin-left: 10px; */
+            /* text-align: center; */
+            border-radius: 10px;
+            /* margin-top: -100px; */
+            /* display: flex;
+            justify-content: space-between; */
+            position: relative;
+            
+        }
+
+    #menx0 {
+        width: 30px;
+        height: 30px;
+        /* margin-left: 150px; */
+        margin-top: 7px;
+        cursor: pointer;
+        position: absolute;
+left: 5;
+        } 
+
+        #menx1 {
+            position: absolute;
+            left: 50px;
+            margin-top: 8px;
+        } 
+
+        #menx2 {
+            position: absolute;
+            left: 135px;
+            margin-top: 10px;
+        } 
+
+        #menx3 {
+            position: absolute;
+            left: 250px;
+            margin-top: 10px;
+        } 
+
+
+        #menx4 {
+            position: absolute;
+            left: 350px;
+            margin-top: 10px;
+        } 
+
+
+
+
+        #menx h2{
+            color: black;
+            /* font-size: 20; */
+            cursor: pointer;
+        }
+
+        #menx h2:hover{
+      color: lightblue;
+        }
+
+        
+
+        @media(max-width:500px){
+        /* body{background-color: white;} */
+        header{display: none;}
+        #menu1{width: 50; border-radius: 50%; margin-left: -10px; margin-top: 10px;  }
+        #fitness1{display: none;}
+        #fitness3{display: none;}
+        #fitness4{display: none;}
+        #fitness5{display: none;}
+        /* #fitness2{display: none;} */
+        .container{display: none;}
+         .aboutus .threex{display: none;}
+        .videoss , #calendar , #cal , .aboutus .onex , .aboutus .twox{display: none;}
+        /* .aboutus .threex{left: 10; top: 10;} */
+        .aboutus h2 { display: none; }
+        .aboutus P { display: none;  }
+
+        /* #fitness2 {
+             margin-top: 100px; 
+        } */
+
+        .aboutus2 h2{
+            color: white;
+            /* position: absolute; */
+             margin-top: 370px; 
+            /* right: 520;  */
+            font-size: 30;
+            margin-left: 10px;
+        }
+
+        .aboutus2 p{
+            color: white;
+            /* position: absolute; */
+            /* margin-top: 420px;
+            right: 160; */
+            font-size: 25;
+            margin-left: 10px;
+        }
+
+
+        #menx{
+            width: 350px;
+            height: 50px;
+            background-color: white;
+            left: -20px;
+            text-align: center;
+            border-radius: 10px;
+            /* top: 500px; */
+            top: 790px;
+            position: absolute;
+            /* position: relative; */
+            left: 5;
+        }
+
+        /* #menx0{position: absolute; width: 40px; height: 40px;} */
+
+    }
+
+
+    @media(min-width:501px) and (max-width:700px) {
+        /* body{background-color: red;} */
+        header{display: none;}
+        #menu1{width: 50; border-radius: 50%; margin-left: -20px; margin-top: 10px; cursor: pointer; }
+        #fitness1{margin-top: -100px;}
+        #fitness2{display: none;}
+        #fitness3{display: none;}
+        #fitness4{display: none;}
+        #fitness5{display: none;}
+        .aboutus , .videoss , #calendar , #cal , .container  { display: none; }
+        .aboutus2 h2{ color: white;  margin-top: -100px; font-size: 30; margin-left: 10px; }
+        .aboutus2 p{ color: white;  font-size: 25;margin-left: 10px;}
+
+
+        #menx{
+            width: 350px;
+            height: 50px;
+            background-color: white;
+            left: -30px;
+            text-align: center;
+            border-radius: 10px;
+            /* margin-top: 100px; */
+            /* top: 70px; */
+            position: relative;
+        }
+
+    }
+
+
+
+
+
+
+    @media(min-width:701px) and (max-width:900px) {
+      /* body{background-color: lightskyblue;} */
+      #fitness1 ,  #fitness2 , #fitness4 , .aboutus , .videoss , #calendar , #cal ,  #fitness5 , header , .container {display: none;}
+      #menu1{width: 50; border-radius: 50%; margin-left: -20px; margin-top: 10px; } 
+      #fitness3{ margin-top: -300px; width: 800px; margin-left: -20px; }
+      .aboutus2 h2{ color: white;  margin-top: 520px; font-size: 30; margin-left: 20px; }
+        .aboutus2 p{ color: white;  font-size: 25;margin-left: 20px;}
+       
+
+
+        /* #menx{
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            margin-left: 650px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: -170px; */
+            /* display: flex;
+            justify-content: space-between; */
+            /* position: relative; */
+            
+        }
+
+        /* #menx0{
+            position: absolute;
+            top: 1;
+        } */
+
+        #menx{
+            margin-top: -65px;
+            margin-left: 100px;
+         }
+
+
+
+    
+
+
+    @media(min-width:901px) and (max-width:1200px) {
+         /* body{background-color: lightpink;} */
+        #fitness1 ,  #fitness2 , #fitness3 , .aboutus , .videoss , #calendar , #cal ,  #fitness5 , header , .container {display: none;} 
+        #menu1{width: 50; border-radius: 50%; margin-left: -20px; margin-top: 10px; } 
+        #fitness4{ margin-top: 100px; width: 900px; left: 20; }
+        .aboutus2 h2{ color: white;  margin-top: 600px; font-size: 30; margin-left: 20px; }
+          .aboutus2 p{ color: white;  font-size: 25;margin-left: 20px;}
+        
+      }
+
+      @media(min-width:1200px) and (max-width:1300px) {
+        body{background-color: black;}
+        #fitness4 ,  #fitness2 , #fitness3 , #fitness5 ,.aboutus2 {display: none;}
+       #menu1{display: none;} 
+       #fitness1{margin-top: 20px;}
+       .container{left: 150;}
+
+
+       .aboutus .onex {
+        position: absolute;
+        margin-top: 350px;
+    height: 350;
+    left: 10;
+    width: 200;
+    
+    }
+    
+    .aboutus .twox {
+        position: absolute;
+        margin-top: 390px;
+        height: 350;
+        width: 400;
+        left: 215;
+        
+        }
+    
+        .aboutus .threex {
+            position: absolute;
+            margin-top: 350px;
+            height: 350;
+            width: 200;
+            left: 670;
+
+            display: none;
+            }
+
+            .aboutus h2{
+                color: white;
+                position: absolute;
+                margin-top: 450px;
+                right: 450;
+                font-size: 30;
+            }
+    
+            .aboutus p{
+                color: white;
+                position: absolute;
+                margin-top: 500px;
+                right: 40;
+                font-size: 25;
+            }
+    
+            .video1{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:5;
+                cursor: pointer;
+            }
+    
+            .video2{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:415;
+                cursor: pointer;
+            }
+    
+            .video3{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:825;
+                cursor: pointer;
+            }
+    
+    
+            .video4{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:5;
+                cursor: pointer;
+            }
+    
+            .video5{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:415;
+                cursor: pointer;
+            }
+    
+            .video6{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:825;
+                cursor: pointer;
+            }
+
+         
+     }
+
+
+     @media(min-width:1301px) and (max-width:1400px) {
+        /* body{background-color: purple;} */
+         #fitness4 ,  #fitness2 , #fitness3 , #fitness5 ,.aboutus2 {display: none;}
+       #menu1{display: none;} 
+       #fitness1{margin-top: 20px;}
+       .container{margin-left: -250px;}
+      
+       #menux{display: none;}
+
+       .aboutus .onex {
+        position: absolute;
+        margin-top: 350px;
+    height: 350;
+    left: 10;
+    width: 230;
+    
+    }
+    
+    .aboutus .twox {
+        position: absolute;
+        margin-top: 390px;
+        height: 350;
+        width: 440;
+        left: 255;
+        
+        }
+    
+        .aboutus .threex {
+            position: absolute;
+            margin-top: 350px;
+            height: 350;
+            width: 200;
+            left: 670;
+
+            display: none;
+            }
+ 
+            .aboutus h2{
+                color: white;
+                position: absolute;
+                margin-top: 450px;
+                right: 450;
+                font-size: 30;
+            }
+    
+            .aboutus p{
+                color: white;
+                position: absolute;
+                margin-top: 500px;
+                right: 40;
+                font-size: 25;
+            }
+   
+            .video1{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:5;
+                cursor: pointer;
+            }
+    
+            .video2{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:440;
+                cursor: pointer;
+            }
+    
+            .video3{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:870;
+                cursor: pointer;
+            }
+    
+    
+            .video4{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:5;
+                cursor: pointer;
+            }
+    
+            .video5{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:440;
+                cursor: pointer;
+            }
+    
+            .video6{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:870;
+                cursor: pointer;
+            } 
+
+         
+     }
+
+
+
+     @media(min-width:1401px) and (max-width:1500px) {
+        /* body{background-color:cadetblue;} */
+         .aboutus2 {display: none;}
+       #menu1{display: none;} 
+       #fitness1{width: 1400;}
+       .container{margin-left: -210px;}
+       #menux{display: none;}
+
+
+
+
+
+
+       #fitness2{
+        width: 300px;
+        
+        border-radius: 10px;
+        position:absolute;
+        top: -17.6%;
+        left:20;
+    }
+    
+    #fitness3{
+        width: 300px;
+        
+        border-radius: 10px;
+        position:absolute;
+        top: 273.5;
+        left:20;
+    }
+    
+    #fitness4{
+        width: 300px;
+        
+        border-radius: 10px;
+        position:absolute;
+        top: -17.6%;
+        right:20;
+    }
+    
+    #fitness5{
+        width: 300px;
+        border-radius: 10px;
+        position:absolute;
+        top: 273.5;
+        right:20;
+    }
+
+
+       .aboutus .onex {
+        position: absolute;
+        margin-top: 350px;
+    height: 350;
+    left: 10;
+    width: 200;
+    
+    }
+    
+    .aboutus .twox {
+        position: absolute;
+        margin-top: 390px;
+        height: 350;
+        width: 400;
+        left: 220;
+        
+        }
+    
+        .aboutus .threex {
+            position: absolute;
+            margin-top: 350px;
+            height: 350;
+            width: 200;
+            left: 630;
+
+            /* display: none; */
+            }
+ 
+            .aboutus h2{
+                color: white;
+                position: absolute;
+                margin-top: 400px;
+                right: 410;
+                font-size: 30;
+            }
+    
+            .aboutus p{
+                color: white;
+                position: absolute;
+                margin-top: 450px;
+                right: 3;
+                font-size: 25;
+            }
+
+            .videoss h2{
+                margin-left: 40px;
+            }
+   
+            .video1{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:50;
+                cursor: pointer;
+            }
+    
+            .video2{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:500;
+                cursor: pointer;
+            }
+    
+            .video3{
+                width: 400px;
+                position: absolute;
+                top: 1500;
+                left:950;
+                cursor: pointer;
+            }
+    
+    
+            .video4{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:50;
+                cursor: pointer;
+            }
+    
+            .video5{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:500;
+                cursor: pointer;
+            }
+    
+            .video6{
+                width: 400px;
+                position: absolute;
+                top: 1750;
+                left:950;
+                cursor: pointer;
+            } 
+        } 
+
+
+
+
+
+
+        @media(min-width:1501px) and (max-width:1600px) {
+            /* body{background-color:crimson;} */
+             .aboutus2 {display: none;}
+           #menu1{display: none;} 
+           #fitness1{width: 1400;}
+           .container{margin-left: -190px;}
+    
+           #calendar{margin-top: 50px;}
+           #cal{margin-top: 90px; margin-left: 10px;}
+    
+    
+    
+    
+    
+           #fitness2{
+            width: 350px;
+            
+            border-radius: 10px;
+            position:absolute;
+            top: -16%;
+            left:20;
+        }
+        
+        #fitness3{
+            width: 350px;
+            
+            border-radius: 10px;
+            position:absolute;
+            top: 259;
+            left:20;
+        }
+        
+        #fitness4{
+            width: 350px;
+            
+            border-radius: 10px;
+            position:absolute;
+            top: -16%;
+            right:20;
+        }
+        
+        #fitness5{
+            width: 350px;
+            border-radius: 10px;
+            position:absolute;
+            top: 259;
+            right:20;
+        }
+    
+    
+           .aboutus .onex {
+            position: absolute;
+            margin-top: 350px;
+        height: 350;
+        left: 10;
+        width: 230;
+        
+        }
+        
+        .aboutus .twox {
+            position: absolute;
+            margin-top: 390px;
+            height: 350;
+            width: 400;
+            left: 250;
+            
+            }
+        
+            .aboutus .threex {
+                position: absolute;
+                margin-top: 350px;
+                height: 350;
+                width: 230;
+                left: 660;
+    
+                /* display: none; */
+                }
+     
+                .aboutus h2{
+                    color: white;
+                    position: absolute;
+                    margin-top: 400px;
+                    right: 450;
+                    font-size: 30;
+                }
+        
+                .aboutus p{
+                    color: white;
+                    position: absolute;
+                    margin-top: 450px;
+                    right: 40;
+                    font-size: 25;
+                }
+    
+                .videoss h2{
+                    margin-left: 40px;
+                }
+       
+                .video1{
+                    width: 430px;
+                    position: absolute;
+                    top: 1500;
+                    left:50;
+                    cursor: pointer;
+                }
+        
+                .video2{
+                    width: 430px;
+                    position: absolute;
+                    top: 1500;
+                    left:500;
+                    cursor: pointer;
+                }
+        
+                .video3{
+                    width: 430px;
+                    position: absolute;
+                    top: 1500;
+                    left:950;
+                    cursor: pointer;
+                }
+        
+        
+                .video4{
+                    width: 430px;
+                    position: absolute;
+                    top: 1770;
+                    left:50;
+                    cursor: pointer;
+                }
+        
+                .video5{
+                    width: 430px;
+                    position: absolute;
+                    top: 1770;
+                    left:500;
+                    cursor: pointer;
+                }
+        
+                .video6{
+                    width: 430px;
+                    position: absolute;
+                    top: 1770;
+                    left:950;
+                    cursor: pointer;
+                } 
+            }
+
+
+
+
+
+
+
+            @media(min-width:1601px) and (max-width:1700px) {
+                /* body{background-color:darkcyan;} */
+                 .aboutus2 {display: none;}
+               #menu1{display: none;} 
+               #fitness1{width: 1400; margin-left: 150;}
+               .container{margin-left: -60px;}
+        
+               #calendar{margin-top: 50px;}
+               #cal{margin-top: 90px; margin-left: 10px;}
+        
+        
+        
+        
+        
+               #fitness2{
+                width:380px;
+                
+                border-radius: 10px;
+                position:absolute;
+                top: -16%;
+                left:20;
+            }
+            
+            #fitness3{
+                width:380px;
+                
+                border-radius: 10px;
+                position:absolute;
+                top: 259;
+                left:20;
+            }
+            
+            #fitness4{
+                width:380px;
+                
+                border-radius: 10px;
+                position:absolute;
+                top: -16%;
+                right:20;
+            }
+            
+            #fitness5{
+                width:380px;
+                border-radius: 10px;
+                position:absolute;
+                top: 259;
+                right:20;
+            }
+        
+        
+               .aboutus .onex {
+                position: absolute;
+                margin-top: 350px;
+            height: 350;
+            left: 10;
+            width: 250;
+            
+            }
+            
+            .aboutus .twox {
+                position: absolute;
+                margin-top: 390px;
+                height: 350;
+                width: 450;
+                left: 270;
+                
+                }
+            
+                .aboutus .threex {
+                    position: absolute;
+                    margin-top: 350px;
+                    height: 350;
+                    width: 250;
+                    left: 730;
+        
+                    /* display: none; */
+                    }
+         
+                    .aboutus h2{
+                        color: white;
+                        position: absolute;
+                        margin-top: 400px;
+                        right: 450;
+                        font-size: 30;
+                    }
+            
+                    .aboutus p{
+                        color: white;
+                        position: absolute;
+                        margin-top: 450px;
+                        right: 40;
+                        font-size: 25;
+                    }
+        
+                    .videoss h2{
+                        margin-left: 40px;
+                    }
+           
+                    .video1{
+                        width: 450px;
+                        position: absolute;
+                        top: 1500;
+                        left:50;
+                        cursor: pointer;
+                    }
+            
+                    .video2{
+                        width: 450px;
+                        position: absolute;
+                        top: 1500;
+                        left:520;
+                        cursor: pointer;
+                    }
+            
+                    .video3{
+                        width: 450px;
+                        position: absolute;
+                        top: 1500;
+                        left:990;
+                        cursor: pointer;
+                    }
+            
+            
+                    .video4{
+                        width: 450px;
+                        position: absolute;
+                        top: 1770;
+                        left:50;
+                        cursor: pointer;
+                    }
+            
+                    .video5{
+                        width: 450px;
+                        position: absolute;
+                        top: 1770;
+                        left:520;
+                        cursor: pointer;
+                    }
+            
+                    .video6{
+                        width: 450px;
+                        position: absolute;
+                        top: 1770;
+                        left:990;
+                        cursor: pointer;
+                    } 
+                }
+
+
+
+                @media(min-width:1701px) and (max-width:1800px) {
+                    /* body{background-color: crimson;} */
+                    .aboutus2 {display: none;}
+               #menu1{display: none;} 
+
+
+
+               .container{margin-left: -80px;}
+        
+               #calendar{margin-top: 50px;}
+               #cal{margin-top: 90px; margin-left: 10px;}
+        
+        
+        
+        
+        
+               #fitness2{
+                width:400px;
+                
+                border-radius: 10px;
+                position:absolute;
+                top: -14.5%;
+                left:20;
+            }
+            
+            #fitness3{
+                width:400px;
+                
+                border-radius: 10px;
+                position:absolute;
+                top: 245.5;
+                left:20;
+            }
+            
+            #fitness4{
+                width:400px;
+                
+                border-radius: 10px;
+                position:absolute;
+                top: -14.5%;
+                right:20;
+            }
+            
+            #fitness5{
+                width:400px;
+                border-radius: 10px;
+                position:absolute;
+                top: 245.5;
+                right:20;
+            }
+        
+        
+               .aboutus .onex {
+                position: absolute;
+                margin-top: 350px;
+            height: 350;
+            left: 10;
+            width: 300;
+            
+            }
+            
+            .aboutus .twox {
+                position: absolute;
+                margin-top: 390px;
+                height: 350;
+                width: 450;
+                left: 325;
+                
+                }
+            
+                .aboutus .threex {
+                    position: absolute;
+                    margin-top: 350px;
+                    height: 350;
+                    width: 300;
+                    left: 790;
+        
+                    /* display: none; */
+                    }
+         
+                    .aboutus h2{
+                        color: white;
+                        position: absolute;
+                        margin-top: 400px;
+                        right: 450;
+                        font-size: 30;
+                    }
+            
+                    .aboutus p{
+                        color: white;
+                        position: absolute;
+                        margin-top: 450px;
+                        right: 40;
+                        font-size: 25;
+                    }
+        
+                    .videoss h2{
+                        margin-left: 120px;
+                        margin-top: 20;
+                    }
+           
+                    .video1{
+                        width: 450px;
+                        position: absolute;
+                        top: 1500;
+                        left:130;
+                        cursor: pointer;
+                    }
+            
+                    .video2{
+                        width: 450px;
+                        position: absolute;
+                        top: 1500;
+                        left:600;
+                        cursor: pointer;
+                    }
+            
+                    .video3{
+                        width: 450px;
+                        position: absolute;
+                        top: 1500;
+                        left:1070;
+                        cursor: pointer;
+                    }
+            
+            
+                    .video4{
+                        width: 450px;
+                        position: absolute;
+                        top: 1770;
+                        left:130;
+                        cursor: pointer;
+                    }
+            
+                    .video5{
+                        width: 450px;
+                        position: absolute;
+                        top: 1770;
+                        left:600;
+                        cursor: pointer;
+                    }
+            
+                    .video6{
+                        width: 450px;
+                        position: absolute;
+                        top: 1770;
+                        left:1070;
+                        cursor: pointer;
+                    } 
+                    
+                }
+
+
+
+                @media(min-width:1801px) and (max-width:1950px) {
+                  /* body{background-color:cornflowerblue;} */
+                  .aboutus2 {display: none;}
+                  #menu1{display: none;}
+                  .aboutus h2{
+                    color: white;
+                    position: absolute;
+                    margin-top: 400px;
+                    right: 500;
+                    font-size: 30;
+                }
+        
+                .aboutus p{
+                    color: white;
+                    position: absolute;
+                    margin-top: 450px;
+                    right: 90;
+                    font-size: 25;
+                }
+
+                }

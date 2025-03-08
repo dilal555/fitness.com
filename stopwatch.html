@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch with Hundredths of a Second</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+            color: white;
+        }
+        .stopwatch {
+            text-align: center;
+            /* background-color: palegreen;  */
+            /* padding: 20px; */
+            /* border-radius: 10px; */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            height: 500px;
+            margin-top: 100px;
+        }
+        #time {
+            font-size: 48px;
+            margin: 20px 0;
+            /* margin-top: -100px; */
+            /* position: absolute; */
+            /* top: -100; */
+            margin-left: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin: 5px;
+            margin-top: 100px;
+            cursor: pointer;
+            border: none;
+            /* font-size: 10; */
+            border-radius: 50%;
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            /* color: white; */
+        }
+        /* button:hover {
+            background-color: #0056b3;
+        } */
+
+        #stop img{width: 40px; margin-left: -5px ;}
+        #start img{width: 40px; margin-left: -5px ; }
+        #reset img{width: 40px; margin-left: -5px ;}
+        #backix{width: 50px ; position: absolute ; top: 10px; margin-left: -400px; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <img id="backix" src="back.png" >
+
+    <div class="stopwatch">
+        <!-- <h1>Stopwatch</h1> -->
+        <div id="time">00:00:00.00</div>
+        <button id="start"><img src="play.png" ></button>
+        <button id="stop"><img src="pause.png" alt=""></button>
+        <button id="reset"><img src="reset.png" alt=""></button>
+    </div>
+
+    <script>
+        let startTime;
+        let updatedTime;
+        let difference;
+        let tInterval;
+        let running = false;
+
+        const timeDisplay = document.getElementById('time');
+
+        function startTimer() {
+            if (!running) {
+                startTime = new Date().getTime() - (difference || 0);
+                tInterval = setInterval(updateTime, 10);
+                running = true;
+            }
+        }
+
+        function stopTimer() {
+            clearInterval(tInterval);
+            running = false;
+        }
+
+        function resetTimer() {
+            clearInterval(tInterval);
+            running = false;
+            difference = 0;
+            timeDisplay.innerHTML = "00:00:00.00";
+        }
+
+        function updateTime() {
+            updatedTime = new Date().getTime();
+            difference = updatedTime - startTime;
+
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            const hundredths = Math.floor((difference % 1000) / 10);
+
+            timeDisplay.innerHTML = (hours < 10 ? "0" : "") + hours + ":" + 
+                                    (minutes < 10 ? "0" : "") + minutes + ":" + 
+                                    (seconds < 10 ? "0" : "") + seconds + "." + 
+                                    (hundredths < 10 ? "0" : "") + hundredths;
+        }
+
+        document.getElementById('start').addEventListener('click', startTimer);
+        document.getElementById('stop').addEventListener('click', stopTimer);
+        document.getElementById('reset').addEventListener('click', resetTimer);
+
+        let back = document.getElementById('backix');
+        
+        back.onclick = function(){
+        window.location.href = 'main.html';
+      }
+    </script>
+
+</body>
+</html>
