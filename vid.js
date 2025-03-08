@@ -2,7 +2,7 @@ let back = document.getElementById('back');
 
 
 back.onclick = function(){
-    window.location.href = 'main.html';
+    window.location.href = 'index.html';
 }
 
 // let vid0 = document.getElementById('vid0');
